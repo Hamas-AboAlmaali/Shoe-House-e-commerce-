@@ -1,0 +1,13 @@
+img{
+  width: 150px;
+  height: 70px;
+  mix-blend-mode: multiply;
+}
+.navbar{
+  background-color: rgba(153, 7, 7, 0.5);
+  /* border-bottom: 1px solid black; */
+}
+
+.navTitle{
+  color: white;
+}

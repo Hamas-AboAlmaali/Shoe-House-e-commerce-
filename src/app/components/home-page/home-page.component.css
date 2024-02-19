@@ -1,0 +1,14 @@
+img {
+  /* mix-blend-mode: multiply; */
+  height: 100%;
+  width: 100%;
+}
+
+.imageHome {
+  height: 500px;
+  rotate: -20deg;
+  z-index: -1;
+  margin-top: 55px;
+  /* transform: scaleX(-1); */
+}
+

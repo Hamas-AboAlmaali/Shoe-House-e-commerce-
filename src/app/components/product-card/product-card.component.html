@@ -1,0 +1,24 @@
+<div class="row mx-3 row-space-2">
+
+  <div class="col-sm-12 col-md-3 mt-3" *ngFor="let product of products">
+    <div class="card">
+      <img class="card-img-top" [src]="product.imgSrc" alt="Product Image">
+      <div class="card-body">
+        <h1 class="card-title text-center">{{product.name}}</h1>
+        <hr>
+        <div class="discription text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquid? Expedita
+            laudantium praesentium architecto error ut ex a obcaecati distinctio et officia ...
+        </div>
+        <p class="card-text fs-5"><strong>Price:</strong> ${{product.price}}</p>
+        <p class="card-tex fs-5"><strong>Quantity:</strong> {{product.quantity}}</p>
+        <hr>
+        <div>
+          <button type="button" class="btn btn-danger m-2" (click)="deleteProductHandler(product.id)">Delete</button>
+          <button type="button" class="btn btn-primary m-2" [routerLink]="['/products', product.id, 'edit']">Edit</button>
+          <button type="button" class="btn btn-secondary m-2" [routerLink]="['/products', product.id]">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
