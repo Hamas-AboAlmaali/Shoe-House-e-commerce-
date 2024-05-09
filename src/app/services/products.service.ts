@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductsService {
-  baseURL: string = 'http://localhost:3005/products';
+  baseURL: string = 'https://shoseserver3.onrender.com/products';
 
   constructor(public http: HttpClient) {}
 
